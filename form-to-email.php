@@ -21,13 +21,13 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = "admin@twenty23.com";//<== update the email address
+$email_from = "admin@twenty23example.com";//<== update the email address
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message.\n".
 	"The contact E-mail is: $visitor_email";
     
-$to = "admin@2023llc.com";//<== update the email address
+$to = "admin@twenty23example.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
